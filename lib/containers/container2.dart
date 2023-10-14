@@ -25,6 +25,34 @@ class _Container2State extends State<Container2> {
             child: Stack(
               children: [
                 Positioned(
+                  top: -20,
+                  right: -20,
+                  child: Container(
+                    height: 320,
+                    width: 320,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/Vector.png'),
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
+                  left: -20,
+                  bottom: -20,
+                  child: Container(
+                    height: 320,
+                    width: 320,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage('assets/images/Vector2.png'),
+                        fit: BoxFit.contain,
+                      ),
+                    ),
+                  ),
+                ),
+                Positioned(
                   top: 50,
                   left: 43,
                   right: 43,
