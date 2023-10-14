@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:responsive_builder/responsive_builder.dart';
+import 'package:xpense/utils/colors.dart';
+import 'package:xpense/utils/styles.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});
@@ -47,8 +49,12 @@ class _NavBarState extends State<NavBar> {
           Container(
             height: 45,
             child: ElevatedButton(
+              style: borderedButtonStyle,
               onPressed: () {},
-              child: const Text('Request a Demo'),
+              child: Text(
+                'Request a Demo',
+                style: TextStyle(color: AppColors.primary),
+              ),
             ),
           )
         ],
@@ -58,6 +64,7 @@ class _NavBarState extends State<NavBar> {
 
   Widget navButton(String text) {
     return Container(
+      margin: EdgeInsets.symmetric(horizontal: 10),
       child: TextButton(
         onPressed: () {},
         child: Text(
