@@ -75,7 +75,7 @@ class _Container2State extends State<Container2> {
           ),
           Container(
             color: Colors.white,
-            padding: EdgeInsets.fromLTRB(50, 40, 50, 66),
+            padding: EdgeInsets.fromLTRB(50, 40, 50, 60),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
